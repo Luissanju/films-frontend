@@ -1,0 +1,10 @@
+# Desactivar listado de directorios
+Options -Indexes
+
+# Redirigir desde mooo.com a chickenkiller.com
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^films-luis-daw\.api\.mooo\.com$ [NC]
+RewriteRule ^(.*)$ http://films-luis-daw.api.chickenkiller.com/$1 [L,R=301]
+
+# Página personalizada 404
+ErrorDocument 404 /pages/404.html
