@@ -23,5 +23,9 @@ table {
 }
 
 h1 {
-    color: red;
+    color: rgb(0, 47, 255);
+}
+
+p{
+    color: rgb(255, 127, 127);
 }
