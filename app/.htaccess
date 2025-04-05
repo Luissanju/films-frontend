@@ -1,6 +1,10 @@
 # Desactivar listado de directorios
 Options -Indexes
 
+# Redirección temporal a la web de mantenimiento
+# RewriteCond %{HTTP_HOST} ^films-luis-daw\.api\.chickenkiller\.com$ [NC]
+# RewriteRule ^(.*)$ http://mantenimiento-luis-daw.chickenkiller.com [R=302,L]
+
 # Redirigir desde mooo.com a chickenkiller.com
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^films-luis-daw\.api\.mooo\.com$ [NC]
